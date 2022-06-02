@@ -15,7 +15,7 @@ A simple clock that uses Neumorphisme
 
 ## Website preview can be viewed here
 
-[https://gloirekiba.github.io/neumorphisme-clock/](https://gloirekiba.github.io/neumorphisme-clock/)
+[https://gloirekiba.github.io/neumorphism-clock/](https://gloirekiba.github.io/neumorphism-clock/)
 
 
 ## Screenshots
