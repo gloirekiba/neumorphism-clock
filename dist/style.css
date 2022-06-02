@@ -1,0 +1,118 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e6e6;
+}
+
+.clock {
+  position: relative;
+  width: 50em;
+  height: 50em;
+  padding: 2em;
+  margin-top: 10em;
+  border-radius: 50%;
+  border: 7px solid #e7e6e6;
+  box-shadow: -4px -4px 10px rgba(200, 199, 199, 0.5), inset 4px 4px 10px rgba(255, 255, 255, 0.5), inset -4px -4px 10px rgba(200, 199, 199, 0.5), 4px 4px 10px rgba(255, 255, 255, 0.3);
+}
+.clock__outer {
+  position: relative;
+  background-color: #e7e6e6;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.clock__outer::after {
+  transform: rotate(90deg);
+}
+.clock__outer::before, .clock__outer::after, .clock__marking {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  left: 49%;
+  width: 5px;
+  height: 100%;
+  background-color: #1df52f;
+}
+.clock__marking {
+  background-color: #bdbdbd;
+}
+.clock__marking--1 {
+  transform: rotate(30deg);
+}
+.clock__marking--2 {
+  transform: rotate(60deg);
+}
+.clock__marking--3 {
+  transform: rotate(120deg);
+}
+.clock__marking--4 {
+  transform: rotate(150deg);
+}
+.clock__inner {
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #e7e6e6;
+}
+.clock__inner::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-top: -6px;
+  margin-left: -9px;
+  background-color: #c8c7c7;
+  z-index: 11;
+}
+.clock__hand {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 25%;
+  height: 6px;
+  background-color: #1df52f;
+  transform-origin: 100%;
+  border-radius: 6px;
+  transform: rotate(90deg);
+  margin-right: 2px;
+}
+.clock__hand--hours {
+  width: 30%;
+  height: 5px;
+  z-index: 3;
+}
+.clock__hand--minutes {
+  height: 3px;
+  z-index: 10;
+  width: 40%;
+}
+.clock__hand--seconds {
+  background-color: #ee791a;
+  width: 45%;
+  height: 2px;
+  z-index: 10;
+}
+
+/*# sourceMappingURL=style.css.map */
